@@ -1,0 +1,4 @@
+- Installation de Cline dans VSC
+- Configuration Cline pour grok-beta et ajout de la clé api 
+- Génération d'une application Vue.js basique avec Vite
+- Premier prompt dans Cline : "Voici une application ViteJS basique utilisant le framework frontend Vue.js. Je veux que tu créé une simple application TodoList "
