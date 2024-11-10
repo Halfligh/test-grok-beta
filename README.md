@@ -1,4 +1,6 @@
 - Installation de Cline dans VSC
 - Configuration Cline pour grok-beta et ajout de la clé api 
 - Génération d'une application Vue.js basique avec Vite
-- Premier prompt dans Cline : "Voici une application ViteJS basique utilisant le framework frontend Vue.js. Je veux que tu créé une simple application TodoList "
+- Premier prompt dans Cline : "Voici une application ViteJS basique utilisant le framework frontend Vue.js. Je veux que tu créé une simple application TodoList " => Fonctionnel 
+- Deuxième prompt : "J'aimerai que dans mon application sur la page Home qu'on ai un composant de connexion qui devient un composant de déconnexion lorsque l'on est connecté et que la todolist appraisse qu'une fois connectée" => Création du composant fonctionnel - Gestion de l'état non fonctionnel 
+- Troisième prompt "J'aimerai que tu utilise vuex pour créer un contexte dans lequel sauvegarder l'état de logged in ou non afin de pouvoir ajuster l'affichage en fonction de ce contexte" => Installation de vuex

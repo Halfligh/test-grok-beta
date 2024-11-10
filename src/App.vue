@@ -1,18 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/vue.svg" />
-    <HelloWorld msg="Welcome to Your Vue.js + Vite App" />
-    <TodoList />
+    <header>
+      <h1>TodoList App</h1>
+      <LoginLogout />
+    </header>
+    <main>
+      <TodoList v-if="isLoggedIn" />
+    </main>
   </div>
 </template>
 
 <script>
 import TodoList from './components/TodoList.vue';
+import LoginLogout from './components/LoginLogout.vue';
 
 export default {
   name: 'App',
   components: {
-    TodoList
+    TodoList,
+    LoginLogout,
+  },
+  computed: {
+    isLoggedIn() {
+      return this.$store.state.isLoggedIn;
+    }
   }
 };
 </script>
@@ -25,5 +36,18 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #35495e;
+  color: white;
+}
+
+main {
+  padding: 20px;
 }
 </style>
